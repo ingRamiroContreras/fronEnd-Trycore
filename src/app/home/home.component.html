@@ -1,0 +1,39 @@
+<!-- Content here -->
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">Planets</h1>
+
+        <ul class="list-group list-group-horizontal-lg">
+            <li class="list-group-item" *ngFor="let item of planets">{{item.name}}
+                <div class="input-group-prepend">
+                    <input type="checkbox" (change)='checkPlanet(item,$event)' aria-label="Checkbox for following text input">
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</div>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">Species</h1>
+        <ul class="list-group list-group-horizontal-sm">
+            <li class="list-group-item" *ngFor="let item of species">{{item.name}}
+                <div class="input-group-prepend">
+                    <input type="checkbox" (change)='checkSpecie(item,$event)' aria-label="Checkbox for following text input">
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">People</h1>
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor="let item of peoples">{{item.name}}
+                <div class="">
+                    <input type="checkbox" (change)='checkPeople(item,$event)' aria-label="Checkbox for following text input">
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

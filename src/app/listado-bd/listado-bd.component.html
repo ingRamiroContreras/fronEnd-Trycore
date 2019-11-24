@@ -1,0 +1,53 @@
+<!-- Content here -->
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">Planets BD</h1>
+        <div class="card" style="width: 36rem;" *ngFor="let item of planets">
+            <!--   <img src="..." class="card-img-top" alt="..."> -->
+            <div class="card-body">
+                <h5 class="card-title">{{item.name}}</h5>
+                <p class="card-text">
+                    <strong>rotation period:</strong>{{item.rotation_period}}<BR>
+                    <strong>orbital period:</strong>{{item.orbital_period}}<BR>
+                    <strong>diameter:</strong>{{item.diameter}}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">Species BD</h1>
+        <div class="card" style="width: 36rem;" *ngFor="let item of species">
+            <!--   <img src="..." class="card-img-top" alt="..."> -->
+            <div class="card-body">
+                <h5 class="card-title">{{item.name}}</h5>
+                <p class="card-text">
+                    <strong>classification  :</strong>{{item.classification}}<BR>
+                    <strong>designation     :</strong>{{item.designation}}<BR>
+                    <strong>average height  :</strong>{{item.average_height}}<BR>
+                    <strong>skin colors     :</strong>{{item.skin_colors}}<BR>
+                    <strong>language        :</strong>{{item.language}}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">People BD</h1>
+        <div class="card" style="width: 36rem;" *ngFor="let item of peoples">
+            <!--   <img src="..." class="card-img-top" alt="..."> -->
+            <div class="card-body">
+                <h5 class="card-title">{{item.name}}</h5>
+                <p class="card-text">
+                    <strong>height:</strong>{{item.height}}<BR>
+                    <strong>mass:</strong>{{item.mass}}<BR>
+                    <strong>hair_color:</strong>{{item.hair_color}}<BR>
+                    <strong>birth_year</strong>{{item.birth_year}}<BR>
+                    <strong>gender</strong>{{item.gender}}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
